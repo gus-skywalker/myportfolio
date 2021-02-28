@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_view_bg"
+    tools:showIn="@layout/activity_pizzas">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/pizza_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            tools:text="F"
+            />
+
+        <TextView
+        android:id="@+id/pizza_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_toStartOf="@id/pizza_price"
+        android:textColor="@color/magenta"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/pizza_icon"
+        android:layout_alignTop="@id/pizza_name"
+        android:text=" PIZZA KOSHER"
+        />
+
+        <TextView
+            android:id="@+id/pizza_ing"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pizza_name"
+            android:layout_alignStart="@id/pizza_name"
+            android:textSize="24sp"
+            android:textColor="@color/magenta"
+            android:text=" PIZZA KOSHER queijo brie azeitona oregano"
+            />
+        
+        <TextView
+            android:id="@+id/pizza_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:text="25$"
+
+            />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

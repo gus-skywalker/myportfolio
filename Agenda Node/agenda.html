@@ -1,0 +1,49 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<header>
+  <div class="container">
+    <h1>Agenda Contatos</h1>
+  </div>
+</header>
+<main class="container">
+  <section>
+    <h2>Meus Contatos</h2>
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Rua</th>
+        <th>Bairro</th>
+        <th>Telefone Fixo</th>
+        <th>Telefone Celular</th>
+      </tr>
+      <tbody class="contato">
+
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Cadastro de Contatos</h2>
+    <form id="formulario" >
+      <fieldset>
+        <label for="campo-nome">Nome:</label>
+        <input id="campo-nome" type="text" placeholder="digite o nome do seu Contato">
+      </fieldset>
+      <fieldset class="campo-endereco">
+        <label for="campo-endereco">Rua:</label>
+        <input id="campo-endereco" type="text" placeholder="digite o endereço do seu Contato">
+      </fieldset>
+      <fieldset class="campo-bairro">
+        <label for="campo-bairro">Bairro:</label>
+        <input id="campo-bairro" type="text" placeholder="digite o seu bairro do seu Contato">
+      </fieldset>
+      <fieldset class="campo-endereco">
+        <label for="campo-telefoneFixo">Telefone Fixo:</label>
+        <input id="campo-telefoneFixo" type="text" placeholder="digite o telefone Fixo">
+      </fieldset>
+      <fieldset class="campo-TelefoneCelular">
+        <label for="campo-celular">Telefone Celular:</label>
+        <input id="campo-celular" type="text" placeholder="digite o telefone Celular">
+      </fieldset>
+      <button id="adicionar-contato" class="botao bto-principal">Adicionar</button>
+    </form>
+  </section>
+</main>

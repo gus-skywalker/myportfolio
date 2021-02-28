@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/about"
+            android:title="Sobre"
+            android:icon="@drawable/ic_settings_foreground"
+            app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/addperson"
+        android:title="Acrescentar pessoa"
+        android:icon="@drawable/ic_personadd_foreground"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/btSend"
+        android:title="Enviar"
+        android:icon="@drawable/ic_send_foreground"
+        app:showAsAction="ifRoom" />
+
+</menu>

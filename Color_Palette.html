@@ -1,0 +1,188 @@
+<html>
+<head>
+  <title>color scheme</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      transition: 0.5s ease;
+    }
+    body{
+      padding-top: 40px;
+      background: #0084d6;
+      text-align: center;
+      font-family: tahoma;
+      color: white;
+    }
+    .themes{
+      position: fixed;
+      top: 0;
+      left: 0;
+      text-align: left;
+      color: white;
+    }
+    .themes p.themes-btn{
+      color: #333;
+      background: white;
+      padding: 23px 15px ;
+      box-shadow 3px 3px 0 -2px rgba(0,0,0,0,-2);
+      border-radius: 0 0 5px 0;
+      font-weight: bold;
+    }
+    .themes p.themes-btn:hover{
+      box-shadow: 4px 4px 10px -3px rgba(0,0,0,0.56);
+    }
+    .themes .colors{
+      float: left;
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 0 0 10px 0;
+      margin-left: -300px;
+    }
+    .themes .colors.active {margin-left: 0;}
+    }
+    .themes .colors h3{
+      font-size: 15px;
+      font-family: tahoma;
+      font-weight: normal;
+      font-transform: capitalize;
+      margin-bottom: 7px;
+    }
+    .themes .themes-btn{
+      float: right;
+      cursor: pointer;
+    }
+    .themes ul li{
+      display: inline-block;
+      width:20px;
+      height:20px;
+      cursor: pointer;
+      border-radius: 7.8px;
+      margin-right: 2px;
+    }
+    .themes ul li:hover{
+      filter: alpha(opacity=80);
+      opacity: 0.8;
+    }
+
+/*  PALETA DE CORES A SEREM DEFINIDAS */
+    .themes ul.theme-colors li:nth-child(1),
+     .themes ul.logo-colors li:nth-child(1) {
+      background: #000;
+      color: #000;
+    }
+    .themes ul.theme-colors li:nth-child(2),
+     .themes ul.logo-colors li:nth-child(2) {
+      background: white;
+      color: white;
+    }
+    .themes ul.theme-colors li:nth-child(3),
+     .themes ul.logo-colors li:nth-child(3) {
+      background: red;
+      color: red;
+    }
+    .themes ul.theme-colors li:nth-child(4),
+     .themes ul.logo-colors li:nth-child(4) {
+      background: orange;
+      color: orange;
+    }
+    .themes ul.theme-colors li:nth-child(5),
+     .themes ul.logo-colors li:nth-child(5) {
+      background: yellow;
+      color: yellow;
+    }
+    .themes ul.theme-colors li:nth-child(6),
+     .themes ul.logo-colors li:nth-child(6) {
+      background: green;
+      color: green;
+    }
+    .themes ul.theme-colors li:nth-child(7),
+     .themes ul.logo-colors li:nth-child(7) {
+      background: blue;
+      color: blue;
+    }
+    .themes ul.theme-colors li:nth-child(8),
+     .themes ul.logo-colors li:nth-child(8) {
+      background: purple;
+      color: purple;
+    }
+    h1{
+      margin-top: 215px;
+      font-size: 70px;
+      display: inline-block;
+      position: relative;
+      font-weight: bold;
+      font-family: tahoma;
+    }
+    h3{
+      margin-top: 50px;
+    }
+    .themes-btn{
+      border-top-right-radius: 25px !important;
+      border-bottom-right-radius: 25px !important;
+      padding: 15px 35px !important;
+    }
+
+  </style>
+</head>
+
+
+<body>
+    <div class="themes">
+      <div class="colors">
+        <h3>Theme Colors</h3>
+          <ul class="theme-colors">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <br>
+        <h3>Logo Colors</h3>
+        <ul class="logo-colors">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        </div>
+        <p class="themes-btn">
+          <i class="fa fa-gear fa-spin" style="font-size:24px"></i>
+        </p>
+    </div>
+
+    <h1> TIIA </h1>
+    <h2> LEA </h2>
+
+</body>
+
+<script>
+  $(document).ready(function(){
+    $('ul.theme-colors li').click(function(){
+      $('body').css('background',$(this).css('color'));
+  });
+    $('ul.logo-colors li').click(function(){
+      var theme = $(this).css('background-color');
+        $('#leafs div').css('background', theme);
+        $('h1,h2 span,h2').css('color', theme);
+    });
+    $('p.themes-btn').click(function(){
+      $('.colors').toggleClass('active');
+    });
+});
+
+
+</script>
+
+</html>

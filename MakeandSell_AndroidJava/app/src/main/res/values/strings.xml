@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MakeandSell</string>
+    <string name="list_items">Componentes</string>
+    <string name="components">Componentes</string>
+    <string name="pizzas">Pizzas</string>
+    <string name="calc">Calculadora</string>
+    <string-array name="choice_items">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
