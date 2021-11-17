@@ -1,0 +1,90 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/main.css">
+
+        <!--responsividade-->
+        <link rel="stylesheet" href="style/responsive.css">
+
+        <!--owl css-->
+        <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+        <title>Roupa de Praia</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h2 class="logo">[logo]</h2>
+                <nav>
+                    <a href="#">Menu</a>
+                    <a href="#">Produto</a>
+                    <a href="#">Produto</a>
+                    <a href="#">Contatos</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="produto-principal">
+                <div class="container">
+                    <h3 class="titulo">Roupa de Praia</h3>
+                    <p class="descricao">Aceita a tua Grandeza</p>
+                    <div class="botoes">
+                        <button role="button" class="botao">
+                            <i class="fas fa-umbrella-beach"></i>
+                            PEDIR
+                        </button>
+                        <button role="button" class="botao">
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <div class="carrosel-biquinis">
+
+                <include src="card2.html"></include>
+                <div class="owl-carousel owl-theme">
+                    
+                    <div class="item">
+                        <img class="box-biquini" src="_img/colecao/biquini_branco1.jpg" alt="" srcset="">
+                        <p class="card-description">Café quentinho!</p>
+                        <p class="preco">R$ 2,00</p>
+                        <a href="https://tiia.com.br/LEA/ce/cafe_com_noticias/comprar?id=1">Comprar</a>
+                    </div>
+                    <div class="item">
+                        <img class="box-biquini" src="_img/colecao/biquini_branco2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-biquini" src="_img/colecao/biquini_branco3.jpg" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-biquini" src="_img/colecao/biquini_branco4.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div>
+                <object type="text/html" data="some.html">
+                    <p>backup content</p>
+                    </object>
+                </div>                    
+                <button onclick="carregar();">Carregar Carrossel</button>
+                <div id="itemInserted"></div>
+            </div>
+
+            <script src="https://kit.fontawesome.com/275f3a82dd.js" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+            <script>
+                function carregar() {
+                    $("#itemInserted").load("./card2.html"); 
+                };
+                $(carregar);
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            <script src="js/owl/setup.js"></script>
+            
+
+    </body>
+</html>

@@ -46,6 +46,7 @@
         </main>
             <div class="carrosel-biquinis">
                 <div class="owl-carousel owl-theme">
+                    
                     <div class="item">
                         <img class="box-biquini" src="_img/colecao/biquini_branco1.jpg" alt="" srcset="">
                     </div>
@@ -140,12 +141,26 @@
                         <img class="box-biquini" src="_img/colecao/biquini_azul6.jpg" alt="" srcset="">
                     </div>        
                 </div>
+                <div>
+                <object type="text/html" data="card.html">
+                    <p>backup content</p>
+                    </object>
+                </div>                    
+                <button onclick="carregar();">Carregar Carrossel</button>
+                <div id="itemInserted"></div>
             </div>
 
             <script src="https://kit.fontawesome.com/275f3a82dd.js" crossorigin="anonymous"></script>
             <script src="js/owl/jquery.min.js"></script>
+            <script>
+                function carregar() {
+                    $("#itemInserted").load("./card2.html"); 
+                };
+                $(carregar);
+            </script>
             <script src="js/owl/owl.carousel.min.js"></script>
             <script src="js/owl/setup.js"></script>
+            
 
     </body>
 </html>
